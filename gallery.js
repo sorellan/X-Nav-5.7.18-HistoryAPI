@@ -1,11 +1,13 @@
 function supports_history_api() {
-  return !!(window.history && history.pushState);
+  //return !!(window.history && history.pushState);
+  return !!(Modernizr.history);
 }
 
 function swapPhoto(href) {
   var req = new XMLHttpRequest();
   req.open("GET",
-           "http://gsyc.es/~grex/history_api/gallery/" +
+           //"http://gsyc.es/~grex/history_api/gallery/" +
+             "http://localhost:8000/gallery/" +
              href.split("/").pop(),
            false);
   req.send(null);
