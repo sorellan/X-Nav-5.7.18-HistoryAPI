@@ -7,7 +7,7 @@ function swapPhoto(href) {
   var req = new XMLHttpRequest();
   req.open("GET",
            //"http://gsyc.es/~grex/history_api/gallery/" +
-             "https://github.com/sorellan/X-Nav-5.7.18-HistoryAPI/tree/gh-pages/gallery/" +
+             "http://sorellan.github.io/X-Nav-5.7.18-HistoryAPI/gallery/" +
              href.split("/").pop(),
            false);
   req.send(null);
